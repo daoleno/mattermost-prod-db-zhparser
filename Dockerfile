@@ -1,4 +1,4 @@
-FROM mattermost/mattermost-prod-db:4.6.0
+FROM mattermost/mattermost-prod-db:4.10.0
 
 RUN apt-get update && apt-get install -y wget gcc make bzip2 postgresql-server-dev-9.4 libpq-dev &&\
     wget -q -O - http://www.xunsearch.com/scws/down/scws-1.2.2.tar.bz2 | tar xjf - &&\
